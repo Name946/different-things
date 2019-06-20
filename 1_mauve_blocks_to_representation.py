@@ -6,7 +6,7 @@ p = re.compile(u"=\n")
 prod = re.compile(u">.*\n")
 
 
-f = codecs.open(filename, "r", encoding="utf-8")
+f = open(filename, "r")
 result = ""
 current = 0
 for line in f:
